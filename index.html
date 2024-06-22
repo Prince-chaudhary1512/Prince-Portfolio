@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abhirup Arindam - Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/assets/apple-touch-icon.ico">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Abhirup Arindam</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills-certifications">Skills and Certifications</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Abhirup Arindam</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills-certifications" onclick="toggleMenu()">Skills & Certifications</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img
+          src="./assets/Abhirup.jpg"
+          alt="Abhirup Arindam profile picture"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Abhirup Arindam</h1>
+        <p class="section__text__p2">Data Analyst</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Abhirup-Resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/abhirup-y'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/abhirup-y'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1" style="text-align: center;">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <br> </br>
+      <br> </br>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>
+                1+ years<br />Data Science<br />Business Analyst
+              </p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>
+                Integrated B.Tech + M.Tech<br />Computer Science and Engineering<br />
+                Masters in Data Science <br /> Gautam Buddha University, Greater Noida, IN
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p style="text-align: center;">
+              Hello, I’m Abhirup Arindam, a dedicated and detail-oriented Data Analyst with a passion for turning complex data into actionable insights. With over a year of experience in data science and business analysis, I specialize in statistical analysis, data modeling, and machine learning.
+              <br> </br>
+              I hold an Integrated B.Tech and M.Tech degree in Computer Science and Engineering, and I’m currently pursuing a Master’s degree in Data Science from Gautam Buddha University, Greater Noida, IN. My academic background has equipped me with a strong foundation in various programming languages, including Python, R, SQL, and JavaScript, and proficiency in BI visualization tools such as PowerBI and MS Excel.
+
+             <br> </br>
+              Throughout my career, I have honed my skills in extracting, cleaning, and interpreting complex datasets to enhance business performance. I am adept at using advanced analytical techniques and tools to provide deep insights and support data-driven decision-making. My technical expertise extends to areas like machine learning, Docker, and REST APIs, ensuring I can tackle a wide array of data challenges.
+
+             <br> </br>
+             I am passionate about continuous learning and have pursued various certifications to keep my skills sharp and relevant. I am committed to applying my knowledge and analytical abilities to drive strategic initiatives and improve operational efficiency in any dynamic work environment.
+
+             <br> </br>Whether working independently or collaborating with a team, I bring a problem-solving mindset and a dedication to excellence. I am enthusiastic about leveraging data to make impactful decisions and am always ready to embrace new challenges in the ever-evolving field of data analytics.
+             
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <br>
+    <br>
+    <br> </br>
+    <br> </br>
+    <br>
+    <section id="skills-certifications">
+      <p class="section__text__p1">My Professional</p>
+      <h1 class="title">Skills & Certifications</h1>
+      <div class="skills-certifications-container">
+        <div class="skills-container">
+          <h2 class="section-sub-title">Skills</h2>
+          <div class="skill-category">
+            <h3 class="skill-category-title">Programming Languages</h3>
+            <ul class="skill-list">
+              <li>
+                <img src="./assets/python.png" alt="Python icon" class="icon" />
+                <span>Python</span>
+              </li>
+              
+              <li>
+                <img src="./assets/sql.png" alt="SQL icon" class="icon" />
+                <span>SQL</span>
+              </li>
+              
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3 class="skill-category-title">Data Analysis Tools</h3>
+            <ul class="skill-list">
+              <li>
+                <img src="./assets/numpy.png" alt="NumPy icon" class="icon" />
+                <span>NumPy</span>
+              </li>
+              <li>
+                <img src="./assets/aaaa.png" alt="Pandas icon" class="icon" />
+                <span>Pandas</span>
+              </li>
+              <li>
+                <img src="./assets/excel.png" alt="Excel icon" class="icon" />
+                <span>Excel</span>
+              </li>
+              <li>
+                <img src="./assets/powerbi.png" alt="PowerBI icon" class="icon" />
+                <span>PowerBI</span>
+              </li>
+            </ul>
+          </div>
+          
+        </div>
+        <div class="certifications-container">
+          <h2 class="section-sub-title">Certifications</h2>
+          <ul class="certification-list">
+            <li>
+
+              <div class="certification-details">
+                <h4>Foundations of Data Science</h4>
+                <p>Issued by Google</p>
+              </div>
+            </li>
+            <li>
+
+              <div class="certification-details">
+                <h4> Python for Data Science </h4>
+                <p>Issued by IBM</p>
+              </div>
+            </li>
+            <li>
+
+              <div class="certification-details">
+                <h4>Cybersecurity Fundamentals </h4>
+                <p>Issued by IBM</p>
+              </div>
+            </li>
+            <li>
+              
+              <div class="certification-details">
+                <h4>Responsive Web Design</h4>
+                <p>Issued by freeCodeCamp</p>
+              </div>
+            </li>
+            <li>
+              
+              <div class="certification-details">
+                <h4>Data Fundamentals</h4>
+                <p>Issued by IBM</p>
+              </div>
+            </li>
+            <li>
+              
+              <div class="certification-details">
+                <h4>Blockchain and Its Applications</h4>
+                <p>Issued by IIT-Kharagpur</p>
+              </div>
+            </li>
+            <li>
+              
+              <div class="certification-details">
+                <h4>Introduction to IoT</h4>
+                <p>Issued by CISCO</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+    <section id="projects">
+      <p class="section__text__p1">My Work</p>
+      <h1 class="title">Projects</h1>
+      <div class="projects-container">
+        <div class="project-card" onclick="toggleDetails(this)">
+          <div class="project-front">
+            <img src="./assets/marks.jpg" alt="Project 1 Image" class="project-image" />
+            <h3>Student Marks Prediction</h3>
+            <p>Prediction of marks using Supervised ML</p>
+          </div>
+          <div class="project-back">
+            <h4>Details</h4>
+            <p>More detailed description of the project including technologies used, challenges faced, and results achieved.</p>
+            <a href="https://github.com/abhirup-y/Data-Analysis/tree/5fad62b343d143fc19af188160be04f1dd97cfd1/Student%20Marks%20Prediction" target="_blank">View on GitHub</a>
+          </div>
+        </div>
+        <div class="project-card" onclick="toggleDetails(this)">
+          <div class="project-front">
+            <img src="./assets/iot.jpg" alt="Project 2" class="project-image" />
+            <h3>Smart irrigation system using IoT</h3>
+            <p>Short description of the project.</p>
+          </div>
+          <div class="project-back">
+            <h4>Details</h4>
+            <p>More detailed description of the project including technologies used, challenges faced, and results achieved.</p>
+            <a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a>
+          </div>
+        </div>
+        <div class="project-card" onclick="toggleDetails(this)">
+          <div class="project-front">
+            <img src="./assets/decisiontree.jpg" alt="Project 3" class="project-image" />
+            <h3>Prediction using Decision Tree Algorithm</h3>
+            <p>Short description of the project.</p>
+          </div>
+          <div class="project-back">
+            <h4>Details</h4>
+            <p>More detailed description of the project including technologies used, challenges faced, and results achieved.</p>
+            <a href="https://github.com/yourusername/project3" target="_blank">View on GitHub</a>
+          </div>
+        </div>
+        <div class="project-card" onclick="toggleDetails(this)">
+          <div class="project-front">
+            <img src="./assets/stock.jpeg" alt="Project 4" class="project-image" />
+            <h3>Stock Market Prediction using Numerical /Textual Analysis</h3>
+            <p></p>
+          </div>
+          <div class="project-back">
+            <h4>Details</h4>
+            <p>More detailed description of the project including technologies used, challenges faced, and results achieved.</p>
+            <a href="https://github.com/yourusername/project4" target="_blank">View on GitHub</a>
+          </div>
+        </div>
+        <div class="project-card" onclick="toggleDetails(this)">
+          <div class="project-front">
+            <img src="./assets/covid.jpg" alt="Project 5 Image" class="project-image" />
+            <h3>Timeline Analysis:Covid-19</h3>
+            <p></p>
+          </div>
+          <div class="project-back">
+            <h4>Details</h4>
+            <p>More detailed description of the project including technologies used, challenges faced, and results achieved.</p>
+            <a href="https://github.com/yourusername/project5" target="_blank">View on GitHub</a>
+          </div>
+        </div>
+        <div class="project-card" onclick="toggleDetails(this)">
+          <div class="project-front">
+            <img src="./assets/sports.png" alt="Project 6 Image" class="project-image" />
+            <h3>Expolatory Data Analysis : Sports</h3>
+            <p>Short description of the project.</p>
+          </div>
+          <div class="project-back">
+            <h4>Details</h4>
+            <p>More detailed description of the project including technologies used, challenges faced, and results achieved.</p>
+            <a href="https://github.com/yourusername/project6" target="_blank">View on GitHub</a>
+          </div>
+        </div>
+        <!-- Add more project cards as needed -->
+      </div>
+    </section>
+    
+    
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:raoabhirup@gmail.com">raoabhirup@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://www.linkedin.com/in/abhirup-y"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills-certifications">Skills and Certification</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Abhirup Yadav. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+      function toggleMenu() {
+        document.querySelector('.hamburger-menu').classList.toggle('open');
+      }
+      
+      function toggleDetails(element) {
+        element.classList.toggle('flipped');
+      }
+    </script>
+  </body>
+</html>
